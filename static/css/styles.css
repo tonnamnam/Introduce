@@ -545,6 +545,48 @@ a:hover {
     font-style: italic;
     margin-bottom: 0;
 }
+/* ปรับปรุง Certifications Section */
+.cert-card {
+    display: flex;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer; /* เพิ่มเคอร์เซอร์เป็นรูปมือเมื่อชี้ */
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ส่วนของ Modal */
+.modal-content {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header .btn-close {
+    color: var(--text-color);
+    filter: invert(1);
+}
+
+.modal-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-img-container img {
+    max-width: 100%;
+    max-height: 80vh;
+}
 
 /* ====================
    Contact Section

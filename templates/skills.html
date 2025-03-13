@@ -117,43 +117,59 @@
 
 <section class="certifications-section py-5">
     <div class="container">
-        <h2 class="section-title text-center mb-5">ใบรับรองและการฝึกอบรม</h2>
+        <h2 class="section-title text-center mb-5">Certificate</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-bs-toggle="modal" data-bs-target="#certModal" data-img="{{ url_for('static', filename='img/cert1.png') }}" data-title="ชื่อใบรับรอง">
                     <div class="cert-logo">
-                        <img src="{{ url_for('static', filename='img/cert1.jpg') }}" alt="Certificate 1" class="img-fluid">
+                        <img src="{{ url_for('static', filename='img/cert1.png') }}" alt="Certificate 1" class="img-fluid">
                     </div>
                     <div class="cert-content">
-                        <h3>ชื่อใบรับรอง</h3>
-                        <p class="cert-issuer">หน่วยงานที่ออกใบรับรอง</p>
-                        <p class="cert-date">ปีที่ได้รับ</p>
+                        <h3>Technopreneurs</h3>
+                        <p class="cert-issuer">KMITL MASTERCLASS</p>
+                        <p class="cert-date">2025</p>
                     </div>
                 </div>
             </div>
             
             <div class="col-md-4 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-bs-toggle="modal" data-bs-target="#certModal" data-img="{{ url_for('static', filename='img/cert2.png') }}" data-title="ชื่อใบรับรอง">
                     <div class="cert-logo">
-                        <img src="{{ url_for('static', filename='img/cert2.jpg') }}" alt="Certificate 2" class="img-fluid">
+                        <img src="{{ url_for('static', filename='img/cert2.png') }}" alt="Certificate 2" class="img-fluid">
                     </div>
                     <div class="cert-content">
-                        <h3>ชื่อใบรับรอง</h3>
-                        <p class="cert-issuer">หน่วยงานที่ออกใบรับรอง</p>
-                        <p class="cert-date">ปีที่ได้รับ</p>
+                        <h3>The Disruptor (Full Course) : นักเปลี่ยนโลก</h3>
+                        <p class="cert-issuer">KMITL MASTERCLASS</p>
+                        <p class="cert-date">2025</p>
                     </div>
                 </div>
             </div>
             
             <div class="col-md-4 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-bs-toggle="modal" data-bs-target="#certModal" data-img="{{ url_for('static', filename='img/cert3.png') }}" data-title="ชื่อใบรับรอง">
                     <div class="cert-logo">
-                        <img src="{{ url_for('static', filename='img/cert3.jpg') }}" alt="Certificate 3" class="img-fluid">
+                        <img src="{{ url_for('static', filename='img/cert3.png') }}" alt="Certificate 3" class="img-fluid">
                     </div>
                     <div class="cert-content">
-                        <h3>ชื่อใบรับรอง</h3>
-                        <p class="cert-issuer">หน่วยงานที่ออกใบรับรอง</p>
-                        <p class="cert-date">ปีที่ได้รับ</p>
+                        <h3>การเขียนโปรแกรมจัดการฐานข้อมูลด้วย SQL</h3>
+                        <p class="cert-issuer">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                        <p class="cert-date">2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img id="modalCertImg" src="" alt="Certificate Full Size" class="img-fluid">
                     </div>
                 </div>
             </div>

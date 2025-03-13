@@ -70,4 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
     fadeElements.forEach(element => {
         fadeObserver.observe(element);
     });
+
+    const certCards = document.querySelectorAll('.cert-card');
+    
+    certCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const imgSrc = this.getAttribute('data-img');
+            const imgTitle = this.getAttribute('data-title');
+            
+            document.getElementById('modalCertImg').src = imgSrc;
+            document.getElementById('certModalLabel').textContent = imgTitle;
+        });
+    });
+
 });
