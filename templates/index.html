@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}หน้าแรก{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-6 hero-text">
+                <h1 class="display-4 fw-bold mb-4">สวัสดีครับ <br>ผม <span class="highlight">ต้นน้ำ</span></h1>
+                <p class="lead mb-4">นักศึกษาสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                <div class="hero-buttons">
+                    <a href="/about" class="btn btn-primary me-3">เกี่ยวกับฉัน</a>
+                </div>
+            </div>
+            <div class="col-md-6 position-relative hero-image-container">
+                <div class="hero-image-overlay"></div>
+                <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="รูปโปรไฟล์" class="hero-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">ความเชี่ยวชาญของฉัน</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>การพัฒนา Website</h3>
+                    <p>พัฒนาเว็บไซต์ที่ทันสมัยด้วยเทคโนโลยีล่าสุด เน้นประสบการณ์ผู้ใช้ที่ดีและประสิทธิภาพสูง</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>การออกแบบ UI/UX</h3>
+                    <p>สร้างการออกแบบที่สวยงาม ใช้งานง่าย และตอบสนองความต้องการของผู้ใช้อย่างมีประสิทธิภาพ</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>การพัฒนา Backend</h3>
+                    <p>ออกแบบและพัฒนาเซิร์ฟเวอร์และ API เพื่อรองรับการทำงานของแอปพลิเคชัน</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>
+{% endblock %}

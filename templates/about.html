@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}เกี่ยวกับฉัน{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">About Me</h1>
+    </div>
+</section>
+
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="about-image-container">
+                    <img src="{{ url_for('static', filename='img/about.png') }}" alt="รูปเกี่ยวกับฉัน" class="img-fluid about-image">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="about-content">
+                    <h2 class="mb-4">สวัสดีครับ ผมชื่อ <span class="highlight">ต้นน้ำ</span></h2>
+                    <p class="lead mb-4">นักศึกษาสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                    <p class="mb-4">ผมเป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์ จากสถาบันเทคโนโลยีพระจอมเกล้าฯ ลาดกระบัง มีความสนใจในการพัฒนา Backend Development และ Mobile App Development</p>
+                    <p class="mb-4">ผมชื่นชอบการเรียนรู้เทคโนโลยีใหม่ ๆ และมีประสบการณ์พัฒนาโปรเจ็กต์ในระดับมหาวิทยาลัย รวมถึงการทำ Web Application, Mobile Application, ระบบจัดการข้อมูล
+                                    ผมกำลังมองหาโอกาสฝึกงานในตำแหน่ง Backend Developer หรือ Android Developer เพื่อพัฒนาทักษะและเรียนรู้การทำงานจริง</p>
+                    <div class="personal-info mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><strong>ชื่อ:</strong> ชลนที อาภาแสงสว่าง</li>
+                                    <li><strong>อายุ:</strong> 21</li>
+                                    <li><strong>ที่อยู่:</strong> กรุงเทพมหานคร, ประเทศไทย</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><strong>อีเมล:</strong> cholnatee.arp@gmail.com</li>
+                                    <li><strong>เบอร์โทร:</strong> 085-166-8287</li>
+                                    <li><strong>สถานะ:</strong> หาที่สหกิจศึกษา</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">การศึกษา</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="education-card">
+                    <div class="education-card-header">
+                        <h3>มัธยมศึกษา</h3>
+                        <p>โรงเรียนมัธยมวัดหนองแขม</p>
+                    </div>
+                    <div class="education-card-body">
+                        <p class="education-date">2016 - 2022</p>
+                        <p>แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="education-card">
+                    <div class="education-card-header">
+                        <h3>ปริญญาตรี</h3>
+                        <p>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                    </div>
+                    <div class="education-card-body">
+                        <p class="education-date">2022 - Present</p>
+                        <p>คณะวิทยาศาสตร์, สาขาวิทยาการคอมพิวเตอร์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

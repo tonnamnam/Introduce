@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+
+{% block title %}ทักษะ{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">ทักษะของฉัน</h1>
+    </div>
+</section>
+
+<section class="skills-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <h2 class="section-title mb-4">ทักษะทางเทคนิค</h2>
+                
+                <div class="skill-grid">
+                    <div class="technical-skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-name">HTML CSS</h3>
+                        <p class="skill-level">Advanced</p>
+                    </div>
+                    
+                    <div class="technical-skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-level">Intermediate - Advanced</p>
+                    </div>
+                    
+                    <div class="technical-skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-level">Intermediate - Advanced</p>
+                    </div>
+                    
+                    <div class="technical-skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-level">Intermediate</p>
+                    </div>
+                    
+                    <div class="technical-skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="skill-name">Flask</h3>
+                        <p class="skill-level">Basic - Intermediate</p>
+                    </div>
+                    
+                    <div class="technical-skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-name">SQL NoSQL</h3>
+                        <p class="skill-level">Advanced</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <h2 class="section-title mb-4">ทักษะอื่นๆ</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="other-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>การออกแบบ UI/UX</h3>
+                            <p>ออกแบบประสบการณ์ผู้ใช้และส่วนติดต่อผู้ใช้ที่ใช้งานง่ายและน่าดึงดูด</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="other-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3>การจัดการโครงการ</h3>
+                            <p>บริหารจัดการโครงการให้เสร็จสิ้นตามกำหนดเวลาและงบประมาณ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="other-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Database</h3>
+                            <p>ออกแบบและจัดการฐานข้อมูลให้มีประสิทธิภาพ รองรับการใช้งานในระบบต่าง ๆ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="other-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>การทำงานเป็นทีม</h3>
+                            <p>ทำงานร่วมกับผู้อื่นอย่างมีประสิทธิภาพเพื่อบรรลุเป้าหมายร่วมกัน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="certifications-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">ใบรับรองและการฝึกอบรม</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="{{ url_for('static', filename='img/cert1.jpg') }}" alt="Certificate 1" class="img-fluid">
+                    </div>
+                    <div class="cert-content">
+                        <h3>ชื่อใบรับรอง</h3>
+                        <p class="cert-issuer">หน่วยงานที่ออกใบรับรอง</p>
+                        <p class="cert-date">ปีที่ได้รับ</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="{{ url_for('static', filename='img/cert2.jpg') }}" alt="Certificate 2" class="img-fluid">
+                    </div>
+                    <div class="cert-content">
+                        <h3>ชื่อใบรับรอง</h3>
+                        <p class="cert-issuer">หน่วยงานที่ออกใบรับรอง</p>
+                        <p class="cert-date">ปีที่ได้รับ</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="{{ url_for('static', filename='img/cert3.jpg') }}" alt="Certificate 3" class="img-fluid">
+                    </div>
+                    <div class="cert-content">
+                        <h3>ชื่อใบรับรอง</h3>
+                        <p class="cert-issuer">หน่วยงานที่ออกใบรับรอง</p>
+                        <p class="cert-date">ปีที่ได้รับ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
